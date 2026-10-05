@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Bag | Aurelia Home</title>
+  <meta name="description" content="Review your selected home décor pieces, adjust quantities, and proceed to seamless WhatsApp order confirmation.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/aurelia-logo.svg">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Complimentary Delivery across Pakistan on Orders above PKR 15,000</span>
+    <span style="opacity: 0.5;">|</span>
+    <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer">Inquire on WhatsApp →</a>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="mobile-menu-toggle" aria-label="Open mobile navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="index.html" class="brand-logo">
+        <span class="logo-title">Aurelia Home</span>
+        <span class="logo-subtitle">Curated Living</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="shop.html?category=vases-planters" class="nav-link">Collections</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="header-icon-btn header-search-trigger" aria-label="Search Collection" title="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button type="button" class="header-icon-btn header-wishlist-trigger" aria-label="Saved Pieces" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <a href="cart.html" class="header-icon-btn active" aria-label="View Shopping Bag" title="Shopping Bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-label-text" style="display: none;">Bag (0)</span>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <span class="serif-font" style="font-size: 1.5rem; font-weight: 600;">Aurelia Home</span>
+          <button type="button" class="mobile-drawer-close" aria-label="Close navigation" style="font-size: 1.5rem;">✕</button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop All Pieces</a></li>
+          <li><a href="shop.html?category=wall-decor" class="nav-link">Wall Décor</a></li>
+          <li><a href="shop.html?category=vases-planters" class="nav-link">Vases & Planters</a></li>
+          <li><a href="shop.html?category=cushions-throws" class="nav-link">Cushions & Throws</a></li>
+          <li><a href="shop.html?category=lighting" class="nav-link">Lighting</a></li>
+          <li><a href="shop.html?category=table-decor" class="nav-link">Table Décor</a></li>
+          <li><a href="about.html" class="nav-link">About Our Atelier</a></li>
+          <li><a href="contact.html" class="nav-link">Contact & Help</a></li>
+        </ul>
+      </div>
+      <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+        <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20would%20like%20to%20inquire%20about%20your%20collection." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+          Order via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section-py-sm">
+      <div class="container">
+        
+        <div class="section-header" style="text-align: left; margin-bottom: 2.5rem;">
+          <span class="text-eyebrow">Shopping Cart</span>
+          <h1 class="section-title">Your Shopping Bag</h1>
+        </div>
+
+        <!-- Dynamic Cart Content injected by script.js -->
+        <div id="cart-page-content"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="logo-title">Aurelia Home</h3>
+          <p class="logo-subtitle">Curated Pieces for Beautiful Living</p>
+          <p>
+            Thoughtfully selected décor designed to bring warmth, character and timeless beauty into modern living spaces.
+          </p>
+          <div>
+            <a href="https://wa.me/923XXXXXXXXX" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+              WhatsApp Concierge
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+            <li><a href="shop.html?sort=best-selling">Best Sellers</a></li>
+            <li><a href="shop.html?category=vases-planters">Vases & Planters</a></li>
+            <li><a href="shop.html?category=wall-decor">Wall Décor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#shipping">Shipping Policy</a></li>
+            <li><a href="contact.html#returns">Returns & Exchanges</a></li>
+            <li><a href="contact.html#faq">FAQs</a></li>
+            <li><a href="cart.html">View Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html#philosophy">Design Philosophy</a></li>
+            <li><a href="about.html#craft">Quality & Materials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://wa.me/923XXXXXXXXX" target="_blank" rel="noopener noreferrer">WhatsApp Direct</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aurelia Home. All rights reserved. Curated Pieces for Beautiful Living.</p>
+        <p style="font-size: 0.75rem; color: #736E66;">Demonstration Website • Cash on Delivery / WhatsApp Order Confirmation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20would%20like%20to%20inquire%20about%20your%20pieces." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.52 3.48A11.93 11.93 0 0 0 12.07 0C5.46 0 .09 5.37.09 11.98c0 2.11.55 4.17 1.6 6L0 24l6.21-1.63a11.93 11.93 0 0 0 5.86 1.51h.01c6.61 0 11.98-5.37 11.98-11.98 0-3.2-.1.25-1.25-3.42-3.42zm-8.45 18.49h-.01a9.92 9.92 0 0 1-5.06-1.39l-.36-.22-3.76.99 1-3.66-.24-.38a9.9 9.9 0 0 1-1.52-5.23c0-5.48 4.46-9.94 9.95-9.94a9.88 9.88 0 0 1 7.03 2.91 9.88 9.88 0 0 1 2.92 7.03c0 5.48-4.46 9.94-9.95 9.94zm5.45-7.44c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+    <span>WhatsApp Us</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

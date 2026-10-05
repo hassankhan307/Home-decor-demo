@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Concierge | Aurelia Home</title>
+  <meta name="description" content="Reach the Aurelia Home concierge team for product inquiries, bespoke sourcing, and nationwide order tracking.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/logo/aurelia-logo.svg">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span>Complimentary Delivery across Pakistan on Orders above PKR 15,000</span>
+    <span style="opacity: 0.5;">|</span>
+    <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer">Inquire on WhatsApp →</a>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="mobile-menu-toggle" aria-label="Open mobile navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="index.html" class="brand-logo">
+        <span class="logo-title">Aurelia Home</span>
+        <span class="logo-subtitle">Curated Living</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="shop.html?category=vases-planters" class="nav-link">Collections</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="header-icon-btn header-search-trigger" aria-label="Search Collection" title="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <button type="button" class="header-icon-btn header-wishlist-trigger" aria-label="Saved Pieces" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="wishlist-count-badge" style="display: none;">0</span>
+        </button>
+
+        <a href="cart.html" class="header-icon-btn" aria-label="View Shopping Bag" title="Shopping Bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-label-text" style="display: none;">Bag (0)</span>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-drawer">
+      <div>
+        <div class="mobile-drawer-header">
+          <span class="serif-font" style="font-size: 1.5rem; font-weight: 600;">Aurelia Home</span>
+          <button type="button" class="mobile-drawer-close" aria-label="Close navigation" style="font-size: 1.5rem;">✕</button>
+        </div>
+        <ul class="mobile-nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop All Pieces</a></li>
+          <li><a href="shop.html?category=wall-decor" class="nav-link">Wall Décor</a></li>
+          <li><a href="shop.html?category=vases-planters" class="nav-link">Vases & Planters</a></li>
+          <li><a href="shop.html?category=cushions-throws" class="nav-link">Cushions & Throws</a></li>
+          <li><a href="shop.html?category=lighting" class="nav-link">Lighting</a></li>
+          <li><a href="shop.html?category=table-decor" class="nav-link">Table Décor</a></li>
+          <li><a href="about.html" class="nav-link">About Our Atelier</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact & Help</a></li>
+        </ul>
+      </div>
+      <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem;">
+        <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20would%20like%20to%20inquire%20about%20your%20collection." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+          Order via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="section-py-sm">
+      <div class="container">
+        
+        <div class="section-header" style="text-align: left; margin-bottom: 3.5rem;">
+          <span class="text-eyebrow">Get in Touch</span>
+          <h1 class="section-title">We are here to assist you</h1>
+          <p class="section-description">
+            Whether you have a query about dimensions, need live photos from our studio, or want assistance placing an order, our concierge team is always delighted to help.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          
+          <!-- Left: Information Cards & WhatsApp Quick Link -->
+          <div class="contact-info-card">
+            <h3 class="serif-font" style="font-size: 1.5rem; margin-bottom: 2rem;">Concierge Details</h3>
+
+            <div class="contact-info-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <div>
+                <h5>WhatsApp Direct Line</h5>
+                <p style="margin-bottom: 0.25rem;">+92 3XX XXXXXXX (Demo Number)</p>
+                <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20have%20an%20inquiry." target="_blank" rel="noopener noreferrer" style="color: var(--whatsapp-green); font-weight: 600; text-decoration: underline;">
+                  Start WhatsApp Chat Now →
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <h5>Email Inquiries</h5>
+                <p>concierge@aureliahome.pk</p>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">Responses within 4–6 business hours</span>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <div>
+                <h5>Studio Operating Hours</h5>
+                <p>Monday – Saturday: 10:00 AM – 7:00 PM PKT</p>
+                <p style="font-size: 0.8rem; color: var(--text-muted);">Sunday: WhatsApp Concierge only</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item" style="margin-bottom: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <h5>Dispatch Atelier</h5>
+                <p>Karachi & Lahore Fulfillment Centers, Pakistan</p>
+                <span style="font-size: 0.78rem; color: var(--text-muted);">(Online storefront with nationwide insured dispatch)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="checkout-form-section" style="padding: 2.5rem;">
+            <h3 class="serif-font" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Send a Message</h3>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 2rem;">
+              Fill in your query and our team will get back to you promptly.
+            </p>
+
+            <form id="contact-page-form">
+              <div class="form-grid" style="margin-bottom: 1.5rem;">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Your Name *</label>
+                  <input type="text" id="contact-name" class="form-control" placeholder="Hassan Khan" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-phone">Phone / WhatsApp *</label>
+                  <input type="tel" id="contact-phone" class="form-control" placeholder="03XXXXXXXXX" required>
+                </div>
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="name@example.com">
+                </div>
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="contact-subject">Subject</label>
+                  <select id="contact-subject" class="form-control">
+                    <option value="product-inquiry">Product Sizing & Inquiries</option>
+                    <option value="order-status">Existing Order Status</option>
+                    <option value="custom-decor">Interior Styling Guidance</option>
+                    <option value="wholesale">Wholesale & Trade Inquiries</option>
+                    <option value="other">General Question</option>
+                  </select>
+                </div>
+                <div class="form-group col-span-2">
+                  <label class="form-label" for="contact-message">Your Message *</label>
+                  <textarea id="contact-message" class="form-control" rows="4" placeholder="How can we help you create your ideal space?" required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+              <div id="contact-feedback" style="display: none; margin-top: 1rem; color: var(--accent-olive); font-weight: 500; font-size: 0.9rem;"></div>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- FREQUENTLY ASKED QUESTIONS SECTION -->
+        <section class="faq-section" id="faq">
+          <div class="section-header" style="margin-bottom: 2.5rem;">
+            <span class="text-eyebrow">Help & Clarity</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="faq-item" id="shipping">
+            <button type="button" class="faq-question">
+              <span>How does delivery work across Pakistan?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We deliver nationwide across Pakistan via trusted courier partners. Deliveries to major cities (Karachi, Lahore, Islamabad, Rawalpindi) typically take 2–3 business days, while other regional hubs take 3–5 business days. Standard delivery is flat PKR 250, and completely complimentary on all orders above PKR 15,000.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>How are delicate ceramics and mirrors protected during shipping?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Fragile pieces—such as our arch mirrors and stoneware vases—are double-boxed with custom high-density shock-absorbing foam and reinforced structural corner guards to ensure they arrive in pristine condition.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>How do I confirm my order on WhatsApp?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                When you click "Confirm Order on WhatsApp" on the checkout page, our system automatically compiles your item list, delivery address, and order total into a pre-formatted message. Simply click send in the opened WhatsApp chat window, and our concierge will verify your booking immediately.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="returns">
+            <button type="button" class="faq-question">
+              <span>What is your return or exchange policy?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We offer a 7-day peace-of-mind exchange policy. In the unlikely event of transit damage or a defect upon receipt, simply send a photo to our WhatsApp concierge within 48 hours of delivery, and we will arrange an immediate replacement at zero additional shipping cost.
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="logo-title">Aurelia Home</h3>
+          <p class="logo-subtitle">Curated Pieces for Beautiful Living</p>
+          <p>
+            Thoughtfully selected décor designed to bring warmth, character and timeless beauty into modern living spaces.
+          </p>
+          <div>
+            <a href="https://wa.me/923XXXXXXXXX" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-whatsapp">
+              WhatsApp Concierge
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+            <li><a href="shop.html?sort=best-selling">Best Sellers</a></li>
+            <li><a href="shop.html?category=vases-planters">Vases & Planters</a></li>
+            <li><a href="shop.html?category=wall-decor">Wall Décor</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#shipping">Shipping Policy</a></li>
+            <li><a href="contact.html#returns">Returns & Exchanges</a></li>
+            <li><a href="contact.html#faq">FAQs</a></li>
+            <li><a href="cart.html">View Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html#philosophy">Design Philosophy</a></li>
+            <li><a href="about.html#craft">Quality & Materials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://wa.me/923XXXXXXXXX" target="_blank" rel="noopener noreferrer">WhatsApp Direct</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aurelia Home. All rights reserved. Curated Pieces for Beautiful Living.</p>
+        <p style="font-size: 0.75rem; color: #736E66;">Demonstration Website • Cash on Delivery / WhatsApp Order Confirmation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/923XXXXXXXXX?text=Hello%20Aurelia%20Home%2C%20I%20would%20like%20to%20inquire%20about%20your%20pieces." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.52 3.48A11.93 11.93 0 0 0 12.07 0C5.46 0 .09 5.37.09 11.98c0 2.11.55 4.17 1.6 6L0 24l6.21-1.63a11.93 11.93 0 0 0 5.86 1.51h.01c6.61 0 11.98-5.37 11.98-11.98 0-3.2-.1.25-1.25-3.42-3.42zm-8.45 18.49h-.01a9.92 9.92 0 0 1-5.06-1.39l-.36-.22-3.76.99 1-3.66-.24-.38a9.9 9.9 0 0 1-1.52-5.23c0-5.48 4.46-9.94 9.95-9.94a9.88 9.88 0 0 1 7.03 2.91 9.88 9.88 0 0 1 2.92 7.03c0 5.48-4.46 9.94-9.95 9.94zm5.45-7.44c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.03-1.05 2.51s1.08 2.91 1.23 3.11c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+    <span>WhatsApp Us</span>
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
